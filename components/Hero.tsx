@@ -69,12 +69,13 @@ export default function Hero() {
             </div>
 
             {/* Guitar illustration */}
-            <div
-              className="relative w-[280px] h-[320px] cursor-pointer transition-transform hover:scale-105"
-              onMouseEnter={() => setIsGuitarHovered(true)}
-              onMouseLeave={() => setIsGuitarHovered(false)}
-            >
-              {/* Strings with vibration on hover */}
+            <div className="relative w-[280px] h-[320px]">
+              {/* Strings with vibration on hover - hover area just for strings */}
+              <div
+                className="absolute top-0 left-[118px] w-[34px] h-60 cursor-pointer z-10"
+                onMouseEnter={() => setIsGuitarHovered(true)}
+                onMouseLeave={() => setIsGuitarHovered(false)}
+              />
               <div className={`absolute top-0 left-[120px] w-0.5 h-60 bg-slate ${isGuitarHovered ? 'animate-vibrate' : ''}`} />
               <div className={`absolute top-0 left-[130px] w-0.5 h-60 bg-slate ${isGuitarHovered ? 'animate-vibrate' : ''}`} style={{ animationDelay: '50ms' }} />
               <div className={`absolute top-0 left-[140px] w-0.5 h-60 bg-slate ${isGuitarHovered ? 'animate-vibrate' : ''}`} style={{ animationDelay: '100ms' }} />

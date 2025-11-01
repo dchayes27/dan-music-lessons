@@ -3,26 +3,39 @@ import ScrollFadeIn from './ScrollFadeIn';
 // Icon components
 const GuitarIcon = () => (
   <svg className="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M45 12L52 5M52 5L50 8M52 5L49 7" stroke="#7A9B76" strokeWidth="2" strokeLinecap="round"/>
-    <ellipse cx="20" cy="44" rx="12" ry="16" stroke="#7A9B76" strokeWidth="2.5" fill="none"/>
-    <line x1="32" y1="32" x2="45" y2="19" stroke="#7A9B76" strokeWidth="2.5" strokeLinecap="round"/>
-    <circle cx="26" cy="38" r="1.5" fill="#7A9B76"/>
-    <circle cx="22" cy="42" r="1.5" fill="#7A9B76"/>
-    <circle cx="18" cy="46" r="1.5" fill="#7A9B76"/>
-    <line x1="14" y1="40" x2="14" y2="48" stroke="#7A9B76" strokeWidth="1.5"/>
+    {/* Guitar body */}
+    <ellipse cx="24" cy="42" rx="14" ry="16" stroke="#7A9B76" strokeWidth="2.5" fill="none"/>
+    {/* Sound hole */}
+    <circle cx="24" cy="42" r="5" stroke="#7A9B76" strokeWidth="2" fill="none"/>
+    {/* Neck */}
+    <rect x="28" y="8" width="8" height="28" stroke="#7A9B76" strokeWidth="2.5" fill="none"/>
+    {/* Headstock */}
+    <rect x="26" y="4" width="12" height="6" rx="1" stroke="#7A9B76" strokeWidth="2" fill="none"/>
+    {/* Tuning pegs */}
+    <circle cx="29" cy="7" r="1.5" fill="#7A9B76"/>
+    <circle cx="35" cy="7" r="1.5" fill="#7A9B76"/>
+    {/* Strings */}
+    <line x1="30" y1="10" x2="20" y2="35" stroke="#7A9B76" strokeWidth="0.5" opacity="0.6"/>
+    <line x1="32" y1="10" x2="22" y2="35" stroke="#7A9B76" strokeWidth="0.5" opacity="0.6"/>
+    <line x1="34" y1="10" x2="26" y2="35" stroke="#7A9B76" strokeWidth="0.5" opacity="0.6"/>
   </svg>
 );
 
 const PianoIcon = () => (
   <svg className="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="12" y="20" width="40" height="28" rx="2" stroke="#7A9B76" strokeWidth="2.5" fill="none"/>
-    <line x1="20" y1="20" x2="20" y2="48" stroke="#7A9B76" strokeWidth="2"/>
-    <line x1="28" y1="20" x2="28" y2="48" stroke="#7A9B76" strokeWidth="2"/>
-    <line x1="36" y1="20" x2="36" y2="48" stroke="#7A9B76" strokeWidth="2"/>
-    <line x1="44" y1="20" x2="44" y2="48" stroke="#7A9B76" strokeWidth="2"/>
-    <rect x="18" y="20" width="4" height="14" rx="1" fill="#7A9B76"/>
-    <rect x="26" y="20" width="4" height="14" rx="1" fill="#7A9B76"/>
-    <rect x="38" y="20" width="4" height="14" rx="1" fill="#7A9B76"/>
+    {/* Piano frame */}
+    <rect x="12" y="22" width="40" height="24" rx="2" stroke="#7A9B76" strokeWidth="2.5" fill="none"/>
+    {/* White key dividers - 7 white keys */}
+    <line x1="18.7" y1="22" x2="18.7" y2="46" stroke="#7A9B76" strokeWidth="1.5"/>
+    <line x1="25.3" y1="22" x2="25.3" y2="46" stroke="#7A9B76" strokeWidth="1.5"/>
+    <line x1="32" y1="22" x2="32" y2="46" stroke="#7A9B76" strokeWidth="1.5"/>
+    <line x1="38.7" y1="22" x2="38.7" y2="46" stroke="#7A9B76" strokeWidth="1.5"/>
+    <line x1="45.3" y1="22" x2="45.3" y2="46" stroke="#7A9B76" strokeWidth="1.5"/>
+    {/* Black keys - groups of 2 and 3 */}
+    <rect x="16.5" y="22" width="3" height="14" rx="0.5" fill="#7A9B76"/>
+    <rect x="23" y="22" width="3" height="14" rx="0.5" fill="#7A9B76"/>
+    <rect x="36.5" y="22" width="3" height="14" rx="0.5" fill="#7A9B76"/>
+    <rect x="43" y="22" width="3" height="14" rx="0.5" fill="#7A9B76"/>
   </svg>
 );
 
