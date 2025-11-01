@@ -51,8 +51,8 @@ export default function Hero() {
           {/* Visual - Guitar + Vinyl + Waveform */}
           <div className="relative flex items-center justify-center min-h-[400px]">
             
-            {/* Vinyl record - background left with rotation */}
-            <div className="absolute top-0 left-0 w-36 h-36 rounded-full border-[3px] border-honey/40 animate-spin-slow">
+            {/* Vinyl record - background left */}
+            <div className="absolute top-0 left-0 w-36 h-36 rounded-full border-[3px] border-honey/40">
               <div className="absolute inset-4 rounded-full border-2 border-honey/40" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-honey/70" />
             </div>
