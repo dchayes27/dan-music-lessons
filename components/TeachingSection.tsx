@@ -3,21 +3,31 @@ import ScrollFadeIn from './ScrollFadeIn';
 // Icon components
 const GuitarIcon = () => (
   <svg className="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* Guitar body */}
-    <ellipse cx="24" cy="42" rx="14" ry="16" stroke="#7A9B76" strokeWidth="2.5" fill="none"/>
+    {/* Guitar body - classic acoustic shape */}
+    <path
+      d="M 20 28 C 12 28 8 34 8 42 C 8 50 12 56 20 56 C 28 56 32 50 32 42 C 32 34 28 28 20 28 Z"
+      stroke="#7A9B76"
+      strokeWidth="2.5"
+      fill="none"
+    />
     {/* Sound hole */}
-    <circle cx="24" cy="42" r="5" stroke="#7A9B76" strokeWidth="2" fill="none"/>
+    <circle cx="20" cy="42" r="4.5" stroke="#7A9B76" strokeWidth="2" fill="none"/>
+    {/* Bridge */}
+    <rect x="17" y="50" width="6" height="2" rx="0.5" fill="#7A9B76"/>
     {/* Neck */}
-    <rect x="28" y="8" width="8" height="28" stroke="#7A9B76" strokeWidth="2.5" fill="none"/>
+    <path
+      d="M 26 35 L 42 12"
+      stroke="#7A9B76"
+      strokeWidth="5"
+      strokeLinecap="round"
+    />
     {/* Headstock */}
-    <rect x="26" y="4" width="12" height="6" rx="1" stroke="#7A9B76" strokeWidth="2" fill="none"/>
+    <ellipse cx="45" cy="9" rx="3.5" ry="5" fill="#7A9B76"/>
     {/* Tuning pegs */}
-    <circle cx="29" cy="7" r="1.5" fill="#7A9B76"/>
-    <circle cx="35" cy="7" r="1.5" fill="#7A9B76"/>
-    {/* Strings */}
-    <line x1="30" y1="10" x2="20" y2="35" stroke="#7A9B76" strokeWidth="0.5" opacity="0.6"/>
-    <line x1="32" y1="10" x2="22" y2="35" stroke="#7A9B76" strokeWidth="0.5" opacity="0.6"/>
-    <line x1="34" y1="10" x2="26" y2="35" stroke="#7A9B76" strokeWidth="0.5" opacity="0.6"/>
+    <circle cx="43" cy="7" r="1.2" fill="#E9C46A"/>
+    <circle cx="43" cy="11" r="1.2" fill="#E9C46A"/>
+    <circle cx="47" cy="7" r="1.2" fill="#E9C46A"/>
+    <circle cx="47" cy="11" r="1.2" fill="#E9C46A"/>
   </svg>
 );
 
