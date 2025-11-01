@@ -1,3 +1,5 @@
+import ScrollFadeIn from './ScrollFadeIn';
+
 // Icon components
 const GuitarIcon = () => (
   <svg className="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,30 +60,31 @@ export default function TeachingSection() {
   return (
     <section id="lessons" className="py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-deep mb-4">
-            What I Teach
-          </h2>
-          <p className="text-lg text-slate">
-            Exploring the music you love through hands-on learning
-          </p>
-        </div>
+
+        <ScrollFadeIn>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-deep mb-4">
+              What I Teach
+            </h2>
+            <p className="text-lg text-slate">
+              Exploring the music you love through hands-on learning
+            </p>
+          </div>
+        </ScrollFadeIn>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {offerings.map((item) => (
-            <div
-              key={item.title}
-              className="p-8 border-2 border-mist rounded-xl hover:border-sage hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
-            >
-              <div className="mb-6">{item.icon}</div>
-              <h3 className="text-2xl font-bold text-deep mb-3">
-                {item.title}
-              </h3>
-              <p className="text-slate leading-relaxed">
-                {item.description}
-              </p>
-            </div>
+          {offerings.map((item, idx) => (
+            <ScrollFadeIn key={item.title} delay={idx * 100}>
+              <div className="p-8 border-2 border-mist rounded-xl hover:border-sage hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div className="mb-6">{item.icon}</div>
+                <h3 className="text-2xl font-bold text-deep mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-slate leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            </ScrollFadeIn>
           ))}
         </div>
 

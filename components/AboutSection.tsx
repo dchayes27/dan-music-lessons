@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ScrollFadeIn from './ScrollFadeIn';
 
 export default function AboutSection() {
   return (
@@ -8,12 +9,15 @@ export default function AboutSection() {
       <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-mist/20 to-transparent" />
       
       <div className="max-w-5xl mx-auto relative z-10">
-        
-        <h2 className="text-4xl lg:text-5xl font-bold text-deep text-center mb-12">
-          About Dan
-        </h2>
 
-        <div className="flex flex-col lg:flex-row gap-12 items-start justify-center">
+        <ScrollFadeIn>
+          <h2 className="text-4xl lg:text-5xl font-bold text-deep text-center mb-12">
+            About Dan
+          </h2>
+        </ScrollFadeIn>
+
+        <ScrollFadeIn delay={100}>
+          <div className="flex flex-col lg:flex-row gap-12 items-start justify-center">
 
           <div className="space-y-5 text-lg text-slate leading-relaxed max-w-xl">
             <p>
@@ -54,7 +58,8 @@ export default function AboutSection() {
             />
           </div>
 
-        </div>
+          </div>
+        </ScrollFadeIn>
 
       </div>
     </section>

@@ -1,20 +1,25 @@
 'use client';
 
+import ScrollFadeIn from './ScrollFadeIn';
+
 export default function ContactSection() {
   return (
     <section id="contact" className="py-20 px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
-        
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-deep mb-4">
-            Get In Touch
-          </h2>
-          <p className="text-lg text-slate">
-            Questions about lessons? Send me a message.
-          </p>
-        </div>
 
-        <form 
+        <ScrollFadeIn>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-deep mb-4">
+              Get In Touch
+            </h2>
+            <p className="text-lg text-slate">
+              Questions about lessons? Send me a message.
+            </p>
+          </div>
+        </ScrollFadeIn>
+
+        <ScrollFadeIn delay={100}>
+          <form 
           action="https://formspree.io/f/YOUR_FORM_ID" 
           method="POST"
           className="space-y-6"
@@ -63,13 +68,15 @@ export default function ContactSection() {
 
           <button
             type="submit"
-            className="w-full bg-sage text-white py-4 rounded-lg font-semibold hover:bg-sage/90 transition-all hover:shadow-lg"
+            className="w-full bg-sage text-white py-4 rounded-lg font-semibold hover:bg-sage/90 transition-all hover:shadow-xl hover:scale-105 hover:-translate-y-1 active:scale-100"
           >
             Send Message
           </button>
-        </form>
+          </form>
+        </ScrollFadeIn>
 
-        <p className="text-center text-sm text-slate mt-8">
+        <ScrollFadeIn delay={200}>
+          <p className="text-center text-sm text-slate mt-8">
           Or book directly through{' '}
           <a 
             href="https://www.justaccessiblemusic.com/" 
@@ -79,7 +86,8 @@ export default function ContactSection() {
           >
             Just Accessible Music
           </a>
-        </p>
+          </p>
+        </ScrollFadeIn>
 
       </div>
     </section>
