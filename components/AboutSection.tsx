@@ -13,13 +13,13 @@ export default function AboutSection() {
           About Dan
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+        <div className="grid lg:grid-cols-[1.5fr,1fr] gap-12 items-start">
+
           <div className="space-y-5 text-lg text-slate leading-relaxed">
             <p>
               I teach private music lessons in Astoria through{' '}
-              <a 
-                href="https://www.justaccessiblemusic.com/" 
+              <a
+                href="https://www.justaccessiblemusic.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sage font-semibold hover:underline"
@@ -27,29 +27,29 @@ export default function AboutSection() {
                 Just Accessible Music
               </a>.
             </p>
-            
+
             <p>
-              I work primarily with kids (ages 4+) and adults who want to understand 
-              music beyond just playing notes. We learn through songs you actually 
+              I work primarily with kids (ages 4+) and adults who want to understand
+              music beyond just playing notes. We learn through songs you actually
               care about—whether that's pop, hip-hop, Radiohead, or classical.
             </p>
-            
+
             <p>
-              I pull in theory as we go, so you understand why progressions work, 
-              how genres get their signature sound, and what makes certain rhythms 
-              feel right. From D'Angelo to Madvillain, Weezer to Chopin—we explore 
+              I pull in theory as we go, so you understand why progressions work,
+              how genres get their signature sound, and what makes certain rhythms
+              feel right. From D'Angelo to Madvillain, Weezer to Chopin—we explore
               what makes it tick.
             </p>
           </div>
 
           {/* Photo */}
-          <div className="aspect-[4/3] rounded-xl overflow-hidden border-[3px] border-sage shadow-lg">
+          <div className="rounded-xl overflow-hidden border-[3px] border-sage shadow-lg max-w-md mx-auto lg:mx-0">
             <Image
               src="/dan-photo.jpg"
-              alt="Dan teaching music"
-              width={800}
-              height={600}
-              className="w-full h-full object-cover"
+              alt="Dan teaching guitar to a young student"
+              width={600}
+              height={800}
+              className="w-full h-auto"
               priority
             />
           </div>
