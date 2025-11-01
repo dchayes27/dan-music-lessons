@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
@@ -40,9 +42,16 @@ export default function AboutSection() {
             </p>
           </div>
 
-          {/* Photo placeholder */}
-          <div className="aspect-[4/3] rounded-xl overflow-hidden border-[3px] border-sage bg-mist/30 flex items-center justify-center text-slate italic">
-            [Dan + niece photo coming soon]
+          {/* Photo */}
+          <div className="aspect-[4/3] rounded-xl overflow-hidden border-[3px] border-sage shadow-lg">
+            <Image
+              src="/dan-photo.jpg"
+              alt="Dan teaching music"
+              width={800}
+              height={600}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
 
         </div>
