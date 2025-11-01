@@ -13,9 +13,9 @@ export default function AboutSection() {
           About Dan
         </h2>
 
-        <div className="grid lg:grid-cols-[1.5fr,1fr] gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-12 items-start justify-center">
 
-          <div className="space-y-5 text-lg text-slate leading-relaxed">
+          <div className="space-y-5 text-lg text-slate leading-relaxed max-w-xl">
             <p>
               I teach private music lessons in Astoria through{' '}
               <a
