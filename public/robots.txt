@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dan-music-lessons.vercel.app/sitemap.xml
+Sitemap: https://astoriamusiclessons.com/sitemap.xml

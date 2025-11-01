@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://dan-music-lessons.vercel.app"),
+  metadataBase: new URL("https://astoriamusiclessons.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Music Lessons in Astoria, NY - Guitar, Piano & Production",
     description: "Professional music lessons for kids (4+) and adults in Astoria. Learn guitar, piano, and production while exploring the music you love.",
-    url: "https://dan-music-lessons.vercel.app",
+    url: "https://astoriamusiclessons.com",
     siteName: "Dan Chayes Music Lessons",
     locale: "en_US",
     type: "website",
@@ -73,7 +73,7 @@ export default function RootLayout({
     "@type": "MusicSchool",
     "name": "Dan Chayes Music Lessons",
     "description": "Professional music lessons for kids and adults in Astoria, NY. Guitar, piano, and music production instruction.",
-    "image": "https://dan-music-lessons.vercel.app/dan-photo.jpg",
+    "image": "https://astoriamusiclessons.com/dan-photo.jpg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Astoria",
@@ -86,7 +86,7 @@ export default function RootLayout({
       "latitude": "40.7722",
       "longitude": "-73.9301"
     },
-    "url": "https://dan-music-lessons.vercel.app",
+    "url": "https://astoriamusiclessons.com",
     "priceRange": "$$",
     "areaServed": {
       "@type": "City",
